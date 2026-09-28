@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>Lexis Wilson</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="preload" href="media/upload-01.jpg" as="image">
+  <link rel="preload" href="media/upload-03.jpg" as="image">
+  <link rel="preload" href="flags/us.svg" as="image">
+  <link rel="preload" href="erotimate-logo-transparent.png" as="image">
+  <link rel="preload" href="erotimate-is-free-reveal-transparent-exact-hold-3.5s.gif" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <section class="profile-shell" aria-label="Profile header">
+    <button class="profile-main popup-trigger" aria-label="Open profile content">
+      <span class="avatar-space"></span>
+      <span class="profile-details">
+        <span class="name-row"><strong class="profile-name" style="color:#7c2fe7">Lexis Wilson</strong><span class="profile-flag" id="profile-flag" role="img" aria-label="United States flag"><img id="profile-flag-image" src="flags/us.svg" alt=""></span><span class="verified" aria-label="Verified account">✓</span></span>
+        <span class="stars" aria-label="5 out of 5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></span>
+        <span class="media-counts" style="color:#ec4d83"><span><span class="outline-icon"><svg class="ermate-media-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M10 8.5 16 12l-6 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </svg></span><b id="video-count">378</b> videos</span><span><span class="outline-icon"><svg class="ermate-media-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="9" cy="9" r="1.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="m6.5 17 4-4 2.5 2.5 2-2 2.5 3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg></span><b id="photo-count">946</b> photos</span></span>
+      </span>
+    </button>
+    <button class="story-button" id="story-open" aria-label="Open story"><span class="story-ring"><img id="profile-photo" src="media/upload-01.jpg" alt="Profile"></span><span class="online-dot"></span></button>
+    <nav class="profile-tabs" aria-label="Profile sections">
+      <button class="active" data-tab="landing" aria-label="All content"><span class="tab-symbol">▦</span></button>
+      <button data-tab="information" aria-label="Information"><span class="tab-symbol">ⓘ</span></button>
+      <button class="popup-trigger" aria-label="Profile"><span class="tab-symbol"><svg class="ermate-tab-profile-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M5.5 20c.8-4.2 3-6.4 6.5-6.4s5.7 2.2 6.5 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg></span></button>
+      <button class="popup-trigger" aria-label="Favorites"><span class="tab-symbol">★</span></button>
+    </nav>
+  </section>
+
+  <div class="body-content">
+    <div class="primary-body-sections">
+      <div class="landing-tab-panel" id="landing-panel">
+        <section class="dating-cam-section" aria-label="Dating Cam">
+          <img src="dating-cam-banner.png" alt="Dating Cam">
+        </section>
+        <section class="action-section"><button class="body-action popup-trigger" id="action-one" style="background:#f02be8;color:#ffffff"><span>🔓</span>Explicit Content</button><button class="body-action popup-trigger" id="action-two" style="background:#f02be8;color:#ffffff"><span>💎</span>+18 Livestream</button></section>
+      </div>
+      <section class="info-section tab-panel-hidden" id="information-panel" aria-label="Profile information">
+        <div class="info-copy"><div class="info-block"><h2 id="live-title"></h2><p id="live-text"></p></div>
+        <div class="info-block"><h2 id="turn-title"></h2><p id="turn-text"></p></div></div>
+        <button class="info-join-button popup-trigger">Join Me</button>
+      </section>
+    </div>
+    <div class="gallery-body-section"><section class="gallery-section"><header class="gallery-heading"><h2><span class="gallery-name"></span> <span>Gallery</span></h2></header><div class="gallery-carousel"><button class="gallery-arrow previous" id="gallery-prev" aria-label="Previous">‹</button><div class="gallery-track gallery-position-0" id="gallery-track"></div><button class="gallery-arrow next" id="gallery-next" aria-label="Next">›</button></div></section></div>
+  </div>
+
+  <footer class="site-footer"><button class="popup-trigger">Privacy Policy</button><span>•</span><button class="popup-trigger">Terms &amp; Conditions</button><span>•</span><button id="dmca-open">DMCA</button></footer>
+
+  <div class="modal-backdrop hidden" id="join-popup"><div class="join-modal" role="dialog" aria-modal="true"><button class="close-button" data-close="join" aria-label="Close">✕</button><h2 class="profile-name"></h2><p class="popup-intro" id="popup-intro"></p><ol id="popup-steps"></ol><a class="popup-gif redirect-link"><img id="popup-gif" alt="Featured live preview"></a><a class="popup-join redirect-link" id="popup-button"></a></div></div>
+
+  <div class="modal-backdrop hidden" id="dmca-popup"><div class="test-modal dmca-modal" role="dialog" aria-modal="true"><button class="close-button" data-close="dmca" aria-label="Close">✕</button><span>TAKEDOWN REQUEST</span><h2>DMCA Notice</h2><p class="dmca-copy">If you believe this content on this page infringes your copyright, email your request with the:</p><div class="dmca-requirements"><strong>1- Content URL *</strong><strong>2- Proof of ownership *</strong><strong>3- Contact information *</strong></div><a class="dmca-send" id="dmca-send">Send Request</a></div></div>
+
+  <div class="story-viewer hidden" id="story-viewer"><div class="story-card"><div class="story-progress"><i></i></div><div class="story-meta"><img id="story-avatar" alt=""><strong class="story-name"></strong><span class="live-badge">LIVE NOW</span><span class="story-time" id="story-time">3m</span><button class="story-back" id="story-close" aria-label="Back">←</button></div><img class="story-image" id="story-photo" alt="Story"><div class="story-promo"><span id="story-promo-one"></span><span id="story-promo-two"></span></div><button class="join-button" id="story-join">Join Me</button></div></div>
+
+  <div class="image-lightbox hidden" id="lightbox"><button class="lightbox-close" data-close="lightbox">✕</button><div class="lightbox-photo"><img id="lightbox-image" alt="Expanded gallery photo"><div class="lightbox-watch"><b class="total-media"></b><button id="lightbox-watch">Watch All</button></div></div></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

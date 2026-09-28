@@ -1,0 +1,5 @@
+.server-out.log
+.server-error.log
+.prod-test-out.log
+.prod-test-error.log
+.env
